@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body,
+p {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: aliceblue;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(svg/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.wrapper {
+    padding: 5px;
+    background-color: rgba(1, 36, 6, 0.685);
+}
+
+.container {
+    margin: 100px 130px;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 45px;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 50px;
+    transition: 0.3s ease;
+    background-color: 0.3s ease 0.1s;
+    box-shadow: 0.3s ease 0.2s;
+}
+
+.logo:hover {
+    transform: translateY(-3px);
+    font-size: 21px;
+    color: #07f873;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav {
+    border: 2px solid #37ad6c;
+    border-radius: 8px;
+    background-color: rgba(88, 6, 241, 0.171);
+}
+
+.nav-item {
+    height: 1rem;
+    width: 11rem;
+    margin-right: 20px;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 13px;
+
+}
+
+.nav-link {
+    cursor: pointer;
+    margin: 50px;
+}
+
+.nav-link:hover {
+    transform: translateY(-3px);
+    font-size: 17px;
+    color: #07f873;
+}
+
+.content {
+    margin: 125px 0;
+}
+
+.content-title {
+    font-weight: 600;
+    font-size: 42px;
+    padding: 0 25px 45px 25px;
+}
+
+.content-name {
+    color: rgba(4, 240, 55, 0.699);
+    font-style: italic;
+
+}
+
+.content-title-second {
+    padding: 25px 0 45px 30px;
+}
+
+.top-name {
+    color: rgba(4, 240, 55, 0.699);
+}
+
+.text {
+    padding-bottom: 1rem;
+    text-indent: 25px;
+}
+
+.table-bg {
+    background-color: rgba(88, 6, 241, 0.171);
+    border-radius: 20px;
+    padding: 50px;
+    border: 2px solid rgba(4, 240, 55, 0.699);
+}
+
+.table-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 3rem;
+    padding-right: 2rem;
+}
+
+.table-name {
+    padding-left: 3rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.table-search {
+    cursor: pointer;
+    padding: 7px 200px 0 13px;
+    border: 2px solid rgba(29, 123, 167, 0.78);
+    border-radius: 20px;
+    font-size: 14px;
+    color: rgba(189, 177, 238, 0.445);
+
+}
+
+.table-search:hover {
+    color: #07f873;
+    border: 2px solid rgba(208, 231, 241, 0.78);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgba(17, 148, 209, 0.78);
+    padding: 10px 30px;
+    background-color: rgba(137, 220, 231, 0.342);
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+
+.table-person {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(17, 148, 209, 0.78);
+    background-color: rgba(116, 180, 223, 0.281);
+    padding: 10px 30px;
+    font-size: 13px;
+    margin: 10px 70px;
+    border-radius: 5px;
+}
+
+.table-person:hover {
+    border: 2px solid rgba(191, 207, 214, 0.78);
+}
+
+.table-header-name,
+.table-header-progress,
+.table-person-name,
+.table-person-progress {
+    width: 270px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.table-person-rating,
+.table-header-role,
+.table-person-role,
+.table-header-rating {
+    width: 70px;
+    text-align: center;
+}
+
+.card-profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5.5rem 3rem 3rem;
+    margin: 10px 50px;
+}
+
+.card-level,
+.card-foto,
+.card-level-name,
+.card-bonus {
+    height: 9rem;
+    width: 9rem;
+}
+
+.card-foto {
+    background-color: #00d35f6c;
+    position: relative;
+    border: 1px solid rgba(17, 148, 209, 0.78);
+}
+
+.foto-img {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.card-level {
+    margin-left: 3rem;
+    font-weight: 500;
+
+}
+
+
+.card-level-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: 700;
+    margin-right: 4.5rem;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: #07f873;
+
+}
+
+
+.card-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.card-bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.card-level-scale {
+    padding: 2px;
+    border: 2px solid rgba(4, 240, 55, 0.699);
+    border-radius: 10px;
+}
+
+.header-user {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgba(17, 148, 209, 0.78);
+    padding: 10px 50px;
+    background-color: rgba(137, 220, 231, 0.342);
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+
+.person-lesson {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(17, 148, 209, 0.78);
+    background-color: rgba(116, 180, 223, 0.281);
+    padding: 10px 30px;
+    font-size: 13px;
+    margin: 10px;
+    border-radius: 5px;
+    margin: 10px 70px;
+}
+
+.person-lesson:hover {
+    box-shadow: inset 2px -3px 2px rgb(0, 255, 55, 0.8);
+    border: 2px solid rgba(9, 206, 2, 0.78);
+}
+
+.header-name-lesson,
+.header-progress-lesson,
+.person-name-lesson,
+.person-progress-lesson,
+.header-role-lesson,
+.person-role-lesson {
+    width: 270px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+
+.header-rating-lesson,
+.person-rating-lesson {
+    width: 70px;
+    text-align: center;
+}
+
+.person-progress-lesson {
+    position: relative;
+}
+
+.person-progress-guitara {
+    display: block;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.person-progress-shadow {
+    display: block;
+    position: absolute;
+    margin-top: -20px;
+    right: 38px;
+    top: 2px;
+
+}
+
+.header-song {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem 0.5rem 3rem;
+    font-weight: 600;
+    margin: 10px 70px;
+}
+
+.header-song-name,
+.person-song-name {
+    width: 320px;
+    text-align: left;
+}
+
+.header-song-stage,
+.header-song-scores,
+.header-song-genre,
+.person-song-stage,
+.person-song-genre,
+.person-song-scores {
+    width: 70px;
+    text-align: center;
+}
+
+.person-song {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(91, 17, 209, 0.78);
+    background-color: rgba(109, 135, 151, 0.582);
+    padding: 0.5rem 5rem 0.5rem 3rem;
+    font-size: 13px;
+    margin: 10px 70px;
+    border-radius: 5px;
+}
+
+.person-song:hover {
+    box-shadow: inset 2px -3px 2px rgb(0, 255, 55, 0.8);
+    border: 1px solid rgba(9, 206, 2, 0.78);
+}
+
+.footer-email {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 75px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.footer-text {
+    font-weight: 600;
+    margin: 20px;
+}
