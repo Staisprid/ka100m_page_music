@@ -2,23 +2,23 @@
     box-sizing: border-box;
 }
 
-
-
 body,
 p {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     color: aliceblue;
 }
 
 body {
-    min-height: 100vh;
     background-image: url(svg/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: normal;
+    text-align: justify;
 }
 
 a {
@@ -50,7 +50,7 @@ ul {
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    margin: 0 50px;
+    margin: 0 1.3vw;
     transition: 0.3s ease;
     background-color: 0.3s ease 0.1s;
     box-shadow: 0.3s ease 0.2s;
@@ -72,12 +72,14 @@ ul {
     border: 2px solid #37ad6c;
     border-radius: 8px;
     background-color: rgba(88, 6, 241, 0.171);
+    position: relative;
 }
 
 .nav-item {
-    height: 1rem;
-    width: 11rem;
-    margin-right: 20px;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    height: 1vw;
+    width: 8vw;
 }
 
 .nav-list {
@@ -86,9 +88,13 @@ ul {
 
 }
 
+.item-lesson {
+    padding-left: 20px;
+}
+
 .nav-link {
     cursor: pointer;
-    margin: 50px;
+
 }
 
 .nav-link:hover {
@@ -97,8 +103,13 @@ ul {
     color: #07f873;
 }
 
+.hamburger-color {
+    display: none;
+    position: absolute;
+}
+
 .content {
-    margin: 125px 0;
+    margin: 8vw 0;
 }
 
 .content-title {
@@ -295,7 +306,6 @@ ul {
     background-color: rgba(116, 180, 223, 0.281);
     padding: 10px 30px;
     font-size: 13px;
-    margin: 10px;
     border-radius: 5px;
     margin: 10px 70px;
 }
@@ -337,7 +347,7 @@ ul {
     display: block;
     position: absolute;
     margin-top: -20px;
-    right: 38px;
+    right: 10%;
     top: 2px;
 
 }
@@ -407,4 +417,472 @@ ul {
 .footer-text {
     font-weight: 600;
     margin: 20px;
+}
+
+@media(max-width:1430px) {
+
+    body,
+    p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .container {
+        margin: 90px 110px;
+    }
+
+    .nav-item {
+        margin-right: 1vw;
+        margin-left: 2vw;
+        height: 0.8vw;
+        width: 10vw;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .nav-link:hover {
+        transform: translateY(-3px);
+        font-size: 15px;
+        color: #07f873;
+    }
+
+    .table-header {
+        margin: 10px 20px;
+        font-size: 14px;
+    }
+
+    .table-person {
+        padding: 10px 30px;
+        margin: 10px 20px;
+    }
+
+    .table-header-name,
+    .table-header-progress,
+    .table-person-name,
+    .table-person-progress {
+        width: 200px;
+    }
+
+    .card-profile {
+        padding: 1rem 2rem 1rem 1rem;
+        margin: 10px 50px;
+    }
+
+}
+
+@media(max-width:1370px) {
+
+    .header-user {
+        margin: 10px 20px;
+    }
+
+    .person-lesson {
+        padding: 10px 20px;
+        font-size: 13px;
+        margin: 10px 40px;
+    }
+
+    .person-progress-guitara {
+        right: 23px;
+        width: 228px;
+    }
+
+    .header-name-lesson,
+    .header-progress-lesson,
+    .person-name-lesson,
+    .person-progress-lesson,
+    .header-role-lesson,
+    .person-role-lesson {
+        width: 170px;
+    }
+
+    .header-rating-lesson,
+    .person-rating-lesson {
+        width: 50px;
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    .header-song {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        font-weight: 600;
+        margin: 10px 50px;
+    }
+
+    .person-song {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        margin: 10px 50px;
+    }
+}
+
+
+@media(max-width:1100px) {
+    .container {
+        margin: 90px 70px;
+    }
+
+    .logo {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .nav-item {
+        height: 0.8vw;
+        width: 10vw;
+    }
+
+    .table-bg {
+        padding: 25px;
+    }
+
+    .table-title {
+        margin: 1rem 1rem;
+        padding-right: 1rem;
+    }
+
+    .table-header-name,
+    .table-header-progress,
+    .table-person-name,
+    .table-person-progress {
+        width: 180px;
+    }
+
+    .table-person-rating,
+    .table-header-role,
+    .table-person-role,
+    .table-header-rating {
+        width: 80px;
+        text-align: center;
+    }
+
+    .table-header {
+        font-size: 13px;
+        margin: 10px 5px;
+        padding: 10px 5px;
+    }
+
+    .table-person {
+        font-size: 12px;
+        padding: 10px 5px;
+        margin: 10px 10px;
+    }
+
+    .card-profile {
+        padding: 1rem 2rem 1rem 1rem;
+        margin: 5px 25px;
+    }
+
+    .person-progress-guitara {
+        right: 35px;
+    }
+
+    .header-name-lesson,
+    .header-progress-lesson,
+    .person-name-lesson,
+    .person-progress-lesson,
+    .header-role-lesson,
+    .person-role-lesson {
+        width: 150px;
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .header-rating-lesson,
+    .person-rating-lesson {
+        width: 40px;
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    .header-user {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    /* .header-user {
+        margin: 10px 5px;
+        padding: 10px 5px;
+    } */
+
+    .person-lesson {
+        padding: 10px 5px;
+        font-size: 13px;
+        margin: 10px 5px;
+    }
+
+    .header-song {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-weight: 600;
+        margin: 10px 30px;
+    }
+
+    .person-song {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 10px 30px;
+    }
+
+}
+
+@media(max-width:925px) {
+    .container {
+        margin: 70px 50px;
+    }
+
+    .nav-item {
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    .logo {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .table-name {
+        padding: 1rem 0 1rem 0;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .table-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 1rem;
+        padding-right: 1rem;
+    }
+
+    .table-search {
+        padding: 7px 200px 7px 13px;
+    }
+
+    .table-header-name,
+    .table-header-progress,
+    .table-person-name,
+    .table-person-progress {
+        width: 90px;
+    }
+
+    .table-person-rating,
+    .table-header-role,
+    .table-person-role,
+    .table-header-rating {
+        width: 40px;
+        text-align: center;
+    }
+
+    .table-header {
+        margin: 5px 5px;
+        padding: 5px 5px;
+    }
+
+    .table-person {
+        font-size: 12px;
+        padding: 5px 5px;
+        margin: 5px 10px;
+    }
+
+    .card-profile {
+        padding: 0.7rem 1rem 0.7rem 0.7rem;
+        margin: 5px 0;
+    }
+
+    .card-level,
+    .card-foto,
+    .card-level-name,
+    .card-bonus {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .foto-img {
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .card-level {
+        margin-left: 1rem;
+    }
+
+
+    .card-level-name {
+        margin-right: 2rem;
+    }
+
+    .person-progress-guitara {
+        right: 20px;
+    }
+
+    .header-song {
+        font-size: 14px;
+        padding: 0.5rem 0 0.5rem 0;
+        font-weight: 600;
+        margin: 10px 10px;
+    }
+
+    .person-song {
+        padding: 0.5rem 0 0.5rem 0;
+        margin: 10px 10px;
+    }
+
+    .header-song-name,
+    .person-song-name {
+        width: 270px;
+    }
+
+}
+
+@media(max-width:800px) {
+    body {
+        font-size: 15px;
+    }
+
+    .content-title {
+        font-weight: 500;
+        font-size: 37px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav {
+        border: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger-color {
+        display: block;
+        border: none;
+        left: -40px;
+    }
+
+    .card-level {
+        margin-left: 0.5rem;
+    }
+
+
+    .card-level-name {
+        margin-right: 0.8rem;
+    }
+
+    .table-name {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .person-progress-guitara {
+        width: 215px;
+        right: -15px;
+    }
+
+    .person-progress-shadow {
+        right: -15px;
+    }
+
+    .header-song-name,
+    .person-song-name {
+        width: 190px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .header-name-lesson,
+    .header-progress-lesson,
+    .person-name-lesson,
+    .person-progress-lesson,
+    .header-role-lesson,
+    .person-role-lesson {
+        font-size: 12px;
+        width: 90px;
+        text-align: left;
+        padding: 0 5px;
+    }
+
+    .header-rating-lesson,
+    .person-rating-lesson {
+        width: 40px;
+        text-align: left;
+        padding-right: 5px;
+    }
+}
+
+@media(max-width:570px) {
+
+    .card-level,
+    .card-foto,
+    .card-level-name,
+    .card-bonus {
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .card-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 50px;
+    }
+
+    .foto-img {
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .person-progress-guitara {
+        width: 190px;
+        right: -25px;
+    }
+
+    .person-progress-shadow {
+        right: -25px;
+    }
+}
+
+@media(max-width:440px) {
+
+    .container {
+        margin: 35px 35px;
+    }
+
+    .table-name {
+        padding: 1rem 0 1rem 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .table-search {
+        padding: 7px 140px 7px 13px;
+    }
+}
+
+@media(max-width:390px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        margin: 30px 30px;
+    }
+
+    .hamburger-color {
+        left: -20px;
+    }
 }
