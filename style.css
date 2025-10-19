@@ -967,6 +967,10 @@ ul {
         display: none;
     }
 
+    .message {
+        padding: 20px 55px;
+    }
+
 
 
 }
