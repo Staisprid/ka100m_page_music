@@ -867,14 +867,16 @@ ul {
         width: 4rem;
     }
 
-    .person-progress-guitara {
+    /* .person-progress-guitara {
         width: 190px;
         right: -25px;
+
     }
 
     .person-progress-shadow {
         right: -25px;
-    }
+        top: 1px;
+    } */
 
     .card-level-name,
     .card-bonus {
@@ -930,7 +932,7 @@ ul {
     .person-progress-shadow {
         width: 265px;
         right: -75px;
-        top: 17px;
+        top: 1px;
     }
 
     .header-rating-lesson,
