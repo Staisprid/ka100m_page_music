@@ -509,6 +509,10 @@ ul {
         padding-right: 15px;
     }
 
+    .card-level-name {
+        margin-right: 1rem;
+    }
+
     .header-song {
         padding: 0.5rem 2rem 0.5rem 2rem;
         font-weight: 600;
@@ -606,15 +610,16 @@ ul {
         font-size: 14px;
     }
 
-    /* .header-user {
-        margin: 10px 5px;
-        padding: 10px 5px;
-    } */
-
     .person-lesson {
         padding: 10px 5px;
         font-size: 13px;
         margin: 10px 5px;
+    }
+
+    .bonus-guitar {
+        width: 64px;
+        height: 64px;
+        padding-left: 0;
     }
 
     .header-song {
@@ -716,7 +721,7 @@ ul {
 
 
     .card-level-name {
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
 
     .person-progress-guitara {
@@ -784,12 +789,15 @@ ul {
     }
 
     .person-progress-guitara {
-        width: 215px;
-        right: -15px;
+        width: 180px;
+        right: -35px;
+        top: 5px;
     }
 
     .person-progress-shadow {
-        right: -15px;
+        width: 180px;
+        right: -35px;
+        top: 5px;
     }
 
     .header-song-name,
@@ -831,7 +839,7 @@ ul {
     }
 }
 
-@media(max-width:570px) {
+@media(max-width:600px) {
     .content-title-second {
         text-align: center;
     }
