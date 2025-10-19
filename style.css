@@ -832,6 +832,9 @@ ul {
 }
 
 @media(max-width:570px) {
+    .content-title-second {
+        text-align: center;
+    }
 
     .card-level,
     .card-foto,
@@ -845,7 +848,7 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10px 50px;
+        margin: 40px 50px;
     }
 
     .foto-img {
@@ -867,9 +870,9 @@ ul {
 
     .card-level-name,
     .card-bonus {
-        height: 7rem;
+        height: 5rem;
         width: 7rem;
-        top: -50px;
+        top: -20px;
         margin: 0;
         align-items: center;
     }
@@ -879,6 +882,93 @@ ul {
         height: 64px;
         padding-left: 0;
     }
+
+    .header-user {
+        display: none;
+    }
+
+    .person-lesson {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 220px;
+        margin: 30px auto;
+        padding: 10px 5px;
+        font-size: 17px;
+    }
+
+    .person-name-lesson,
+    .person-progress-lesson,
+    .person-role-lesson {
+        font-size: 18px;
+        width: 110px;
+        text-align: center;
+        padding: 20px 5px;
+    }
+
+    .person-name-lesson {
+        font-weight: 600;
+    }
+
+    .person-improvisation {
+        margin-right: 30px;
+    }
+
+    .person-progress-guitara {
+        width: 265px;
+        right: -72px;
+    }
+
+    .person-progress-shadow {
+        width: 265px;
+        right: -75px;
+        top: 17px;
+    }
+
+    .header-rating-lesson,
+    .person-rating-lesson {
+        width: 40px;
+        text-align: center;
+        padding-right: 5px;
+    }
+
+    .table-header {
+        display: none;
+    }
+
+    .table-person {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-person-name,
+    .table-person-progress {
+        font-size: 18px;
+        width: 270px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .table-person-rating,
+    .table-person-role {
+        padding-top: 20px;
+        width: 70px;
+        text-align: center;
+    }
+
+    .header-song-name {
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .header-song-stage,
+    .header-song-genre,
+    .header-song-scores {
+        display: none;
+    }
+
+
+
 }
 
 @media(max-width:440px) {
