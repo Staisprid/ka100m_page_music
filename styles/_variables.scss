@@ -1,0 +1,35 @@
+@use 'helpers' as *;
+:root{
+    --color-light:#FFFFFF;
+    --color-green:#37ad6c;
+    --color-bg:url(../svg/bg.png);
+    --color-bg-wrapper: rgba(1, 36, 6, 0.685);
+
+    --color-violet:rgba(88, 6, 241, 0.171);
+    --color-violet-overlay:rgb(48, 1, 134);
+    --color-green-shadow:#0e9b4d;
+    --color-blue:rgba(29, 123, 167, 0.78);
+
+    --color-violet-light:rgba(189, 177, 238, 0.445);
+    --color-blue-light:rgba(208, 231, 241, 0.78);
+
+    --color-accent: #0e9b4d;
+    --color-red:#FF5500;
+
+    --border: #{rem(2)} solid var(--color-accent);
+
+    --font-family-base: 'Montserrat', sans-serif;
+    --font-family-accent: 'Caveat', sans-serif;
+
+    --container-width:#{rem(1600)};
+    --container-padding-x: #{rem(16)};
+
+    --transition-duration: 0.2s;
+
+    @include laptop{
+        --container-width:#{rem(1280)};
+    }
+
+
+
+}

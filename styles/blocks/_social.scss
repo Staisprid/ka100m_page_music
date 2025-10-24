@@ -1,0 +1,16 @@
+@use '../helpers/' as *;
+
+.socials{
+    &__list{
+        display: flex;
+        column-gap: rem(20);
+
+        @include laptop{
+            column-gap: rem(14);
+        }
+    }
+
+    &__item{
+        display: flex;
+    }
+}
