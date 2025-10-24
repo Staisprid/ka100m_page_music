@@ -183,8 +183,6 @@ ul {
     padding-left: 200px;
 } */
 
-.text-wraper {}
-
 /* .text-foto-imgfriends {
     border: 2px solid #9807f8;
     box-shadow: 8px 5px 8px #6739b1;
@@ -328,7 +326,6 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    font-weight: 700;
     margin-right: 4.5rem;
     font-family: "Caveat", cursive;
     font-optical-sizing: auto;

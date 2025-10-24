@@ -4,20 +4,174 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>KA100M</title>
+    <!-- <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>KA100M | Home</title>
+    <script src="./scripts/main.js" type="module" defer></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
+    <header class="header wrapper" data-js-header>
+        <div class="header__body">
+            <div class="header__body-inner container">
+                <a href="/" class="header__logo logo" aria-label="Home" title="Home">
+                    <div>KA100M</div>
+                    <div>studio</div>
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link is-active">Главная</a>
+                            </li>
+                            <li class="header__menu-item ">
+                                <a href="#" class="header__menu-link">Достижения</a>
+                            </li>
+                            <li class="header__menu-item item-lesson">
+                                <a href="#" class="header__menu-link">Уроки</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Контакты</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#" class="header__menu-link">Регистрация</a>
+                            </li>
+                        </ul>
+                </div>
+                <button class="header__burger-button 
+                burger-button
+                visibal-mobile" type="button" aria-label="Open menu" title="Open menu" data-js-header-burger-button>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+    <main class="main wrapper">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium tempora, sapiente eveniet at, alias
+        ullam fugiat culpa cumque exercitationem cupiditate, doloribus accusantium numquam necessitatibus esse et
+        consectetur dicta quae?
+    </main>
+
+    <footer class="footer wrapper">
+        <div class="footer__inner container">
+            <div class="footer__body">
+                <nav class="footer__menu">
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6">Онлайн обучение игре на гитаре</a>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Главное</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">О нас</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Запись на курс</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu-column">
+                        <a href="/" class="footer__menu-main-link h6"> КА100M </a>
+
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link"> Серебряков Антон Сергеевич </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link"> Адрес: Рязанская область, г. Рыбное</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">7(111)000 00 00</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__extra">
+                <div class="footer__socials socials">
+                    <ul class="socials__list">
+                        <li class="socials__item">
+                            <a href="" class="socials__link" target="_blank" aria-label="" title="">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="#07f873"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <!-- <circle cx="13.5" cy="15.5" r="12.5" fill="none" stroke="none" stroke-width="2" /> -->
+                                    <path
+                                        d="M16 0C7.16333 0 0 7.16333 0 16C0 24.8367 7.16333 32 16 32C24.8367 32 32 24.8367 32 16C32 7.16333 24.8367 0 16 0ZM22.1533 18.0517C22.1533 18.0517 23.5683 19.4483 23.9167 20.0967C23.9267 20.1111 23.9328 20.1222 23.935 20.13C24.0761 20.3667 24.1111 20.5539 24.04 20.6917C23.9233 20.9217 23.5233 21.035 23.3867 21.045H20.8867C20.7133 21.045 20.35 21 19.91 20.6967C19.5717 20.46 19.2383 20.0717 18.9133 19.6933C18.4283 19.13 18.0083 18.6433 17.585 18.6433C17.5312 18.6431 17.4778 18.6515 17.4267 18.6683C17.1067 18.7717 16.6967 19.2283 16.6967 20.445C16.6967 20.825 16.3967 21.0433 16.185 21.0433H15.04C14.65 21.0433 12.6183 20.9067 10.8183 19.0083C8.615 16.6833 6.63167 12.02 6.615 11.9767C6.49 11.675 6.74833 11.5133 7.03 11.5133H9.555C9.89167 11.5133 10.0017 11.7183 10.0783 11.9C10.1683 12.1117 10.4983 12.9533 11.04 13.9C11.9183 15.4433 12.4567 16.07 12.8883 16.07C12.9693 16.069 13.0488 16.0485 13.12 16.01C13.6833 15.6967 13.5783 13.6883 13.5533 13.2717C13.5533 13.1933 13.5517 12.3733 13.2633 11.98C13.0567 11.695 12.705 11.5867 12.4917 11.5467C12.578 11.4275 12.6918 11.3309 12.8233 11.265C13.21 11.0717 13.9067 11.0433 14.5983 11.0433H14.9833C15.7333 11.0533 15.9267 11.1017 16.1983 11.17C16.7483 11.3017 16.76 11.6567 16.7117 12.8717C16.6967 13.2167 16.6817 13.6067 16.6817 14.0667L16.6767 14.3867C16.66 15.005 16.64 15.7067 17.0767 15.995C17.133 16.0321 17.1992 16.0513 17.2667 16.05C17.4183 16.05 17.875 16.05 19.1117 13.9283C19.4916 13.2447 19.823 12.5352 20.1033 11.805C20.1283 11.7617 20.2017 11.6283 20.2883 11.5767C20.353 11.546 20.4234 11.5295 20.495 11.5283H23.4633C23.7867 11.5283 24.0083 11.5767 24.05 11.7017C24.1233 11.9 24.0367 12.505 22.6817 14.34L22.0767 15.1383C20.8483 16.7483 20.8483 16.83 22.1533 18.0517Z"
+                                        fill="#2AABED" />
+
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link" target="_blank" aria-label="" title="">
+                                <svg width="30" height="30" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM14.64 6.8C14.49 8.38 13.84 12.22 13.51 13.99C13.37 14.74 13.09 14.99 12.83 15.02C12.25 15.07 11.81 14.64 11.25 14.27C10.37 13.69 9.87 13.33 9.02 12.77C8.03 12.12 8.67 11.76 9.24 11.18C9.39 11.03 11.95 8.7 12 8.49C12.0069 8.45819 12.006 8.42517 11.9973 8.3938C11.9886 8.36244 11.9724 8.33367 11.95 8.31C11.89 8.26 11.81 8.28 11.74 8.29C11.65 8.31 10.25 9.24 7.52 11.08C7.12 11.35 6.76 11.49 6.44 11.48C6.08 11.47 5.4 11.28 4.89 11.11C4.26 10.91 3.77 10.8 3.81 10.45C3.83 10.27 4.08 10.09 4.55 9.9C7.47 8.63 9.41 7.79 10.38 7.39C13.16 6.23 13.73 6.03 14.11 6.03C14.19 6.03 14.38 6.05 14.5 6.15C14.6 6.23 14.63 6.34 14.64 6.42C14.63 6.48 14.65 6.66 14.64 6.8Z"
+                                        fill="#2AABEE" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="" class="socials__link" target="_blank" aria-label="" title="">
+                                <svg width="40" height="40" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <!-- <circle cx="11.5" cy="11.5" r="9.5" fill="#FFFDFD" stroke="#FFFCFC"
+                                        stroke-width="2" /> -->
+                                    <path
+                                        d="M12.0004 9.6901C11.441 9.68415 10.8924 9.84473 10.4245 10.1514C9.95664 10.4581 9.59053 10.897 9.37278 11.4123C9.15503 11.9276 9.09547 12.4961 9.20168 13.0453C9.30789 13.5946 9.57507 14.0999 9.96924 14.4968C10.3634 14.8938 10.8668 15.1646 11.4152 15.2748C11.9637 15.3849 12.5326 15.3294 13.0495 15.1153C13.5663 14.9013 14.0078 14.5383 14.3178 14.0726C14.6278 13.6069 14.7923 13.0595 14.7904 12.5001C14.7917 12.1324 14.7206 11.768 14.5811 11.4278C14.4416 11.0876 14.2364 10.7782 13.9774 10.5173C13.7183 10.2563 13.4103 10.049 13.0711 9.90706C12.7319 9.76514 12.3681 9.69141 12.0004 9.6901Z"
+                                        fill="#2AABED" />
+                                    <path
+                                        d="M12 0C9.62663 0 7.30655 0.703788 5.33316 2.02236C3.35977 3.34094 1.8217 5.21509 0.913451 7.4078C0.00519943 9.60051 -0.232441 12.0133 0.230582 14.3411C0.693605 16.6689 1.83649 18.8071 3.51472 20.4853C5.19295 22.1635 7.33115 23.3064 9.65892 23.7694C11.9867 24.2324 14.3995 23.9948 16.5922 23.0866C18.7849 22.1783 20.6591 20.6402 21.9776 18.6668C23.2962 16.6935 24 14.3734 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2349 1.26428 15.1826 0 12 0ZM17.57 15.63C19.04 15.63 19.8 13.78 19.8 11.96C19.8023 10.1837 19.1386 8.47099 17.94 7.16C17.1043 6.33731 16.1061 5.69805 15.0092 5.28307C13.9124 4.8681 12.741 4.68654 11.57 4.75C9.60555 4.77636 7.73173 5.58073 6.3595 6.98671C4.98727 8.39268 4.22865 10.2855 4.25001 12.25C4.22056 14.2049 4.96699 16.0918 6.32584 17.4975C7.6847 18.9032 9.54523 19.7132 11.5 19.75C12.7714 19.7478 14.0187 19.4023 15.11 18.75C15.191 18.6733 15.288 18.6156 15.3941 18.5811C15.5002 18.5466 15.6126 18.5362 15.7232 18.5507C15.8338 18.5651 15.9398 18.6041 16.0334 18.6647C16.1271 18.7253 16.206 18.806 16.2645 18.901C16.323 18.996 16.3596 19.1028 16.3716 19.2137C16.3836 19.3246 16.3707 19.4367 16.3339 19.542C16.297 19.6473 16.2372 19.743 16.1587 19.8223C16.0801 19.9015 15.985 19.9622 15.88 20C14.5559 20.791 13.0424 21.2091 11.5 21.21C9.14741 21.1731 6.90537 20.2051 5.26523 18.5181C3.62508 16.8311 2.7206 14.5627 2.75001 12.21C2.73132 9.84846 3.64884 7.57566 5.30181 5.88896C6.95477 4.20227 9.20857 3.23902 11.57 3.21C12.9451 3.14619 14.3182 3.37429 15.5988 3.8793C16.8794 4.38431 18.0386 5.15477 19 6.14C20.478 7.73352 21.2995 9.82656 21.3 12C21.3 15 19.73 17.17 17.57 17.17C17.0906 17.2047 16.611 17.1063 16.184 16.8857C15.757 16.6652 15.3992 16.331 15.15 15.92C15.1315 15.8894 15.1068 15.8629 15.0775 15.8423C15.0483 15.8216 15.0151 15.8072 14.98 15.8C14.9436 15.7905 14.9054 15.7901 14.8688 15.7988C14.8322 15.8076 14.7982 15.8251 14.77 15.85C14.0046 16.4984 13.0332 16.8529 12.03 16.85C10.9215 16.7966 9.87611 16.3187 9.11049 15.5153C8.34487 14.712 7.91779 13.6448 7.91779 12.535C7.91779 11.4252 8.34487 10.358 9.11049 9.55467C9.87611 8.7513 10.9215 8.27338 12.03 8.22C12.8844 8.22108 13.7182 8.48272 14.42 8.97C14.4592 8.99385 14.5041 9.00646 14.55 9.00646C14.5959 9.00646 14.6408 8.99385 14.68 8.97C14.7221 8.95072 14.7577 8.9197 14.7825 8.88067C14.8073 8.84164 14.8204 8.79626 14.82 8.75V8.13C14.82 7.93109 14.899 7.74032 15.0397 7.59967C15.1803 7.45902 15.3711 7.38 15.57 7.38C15.7689 7.38 15.9597 7.45902 16.1003 7.59967C16.241 7.74032 16.32 7.93109 16.32 8.13V14.61C16.32 15.28 16.74 15.63 17.57 15.63Z"
+                                        fill="#2AABED" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__copyright">&copy <time datetime="2025">2025</time> KA100M. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="wrapper"> -->
+    <!-- <header class="header" data-js-header>
             <div class="container">
                 <div class="menu">
                     <div class="logo">
@@ -48,10 +202,33 @@
                     </nav>
                 </div>
             </div>
-        </header>
-        <section>
+            <div class="header__overlay" data-js-header-overlay>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Главная</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">Достижения</a>
+                        </li>
+                        <li class="nav-item item-lesson">
+                            <a href="#" class="nav-link">Уроки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header> -->
+    <!-- <section>
             <div class="container">
-                <div class="content">
+                <!-- <div class="content">
                     <h1 class="content-title">KA100M <span class="content-name"> studio </span></h1>
                     <h4 class="content-title-second">
                         Добро пожаловать в мир музыки и творчества!
@@ -75,12 +252,12 @@
                     </p>
                     <p class="text text-question">
                         Что ждёт наших студентов?
-                    </p>
-                    <!-- <div class="text-teather-foto">
+                    </p> -->
+    <!-- <div class="text-teather-foto">
                         <div class="text-foto-wrap"><img class="text-foto-img" src="img/Anton.jpg" alt=""></div>
                         <div class="text-foto-wrap"><img class="text-foto-img" src="img/Anastasia.jpg" alt=""></div>
                     </div> -->
-                    <div class="text-wraper">
+    <!-- <div class="text-wraper">
                         <p class="text text-one">
                             Увлекательные занятия с опытными педагогами.
                         </p>
@@ -93,9 +270,9 @@
                         <p class="text text-friends">
                             Приятная атмосфера творческого коллектива единомышленников.
                         </p>
-                    </div>
+                    </div> -->
 
-                    <!-- <div class="text-teather-foto">
+    <!-- <div class="text-teather-foto">
                         <div class="text-teather">
                             <p class="text">
                                 Возможность выступить на сцене и поучаствовать в концертах.
@@ -125,16 +302,16 @@
                     <div class="text-foto-wrap"><img class="text-foto-imggroup" src="img/friends.jpg" alt="">
                 </div> -->
 
-                </div>
+    <!-- </div>
                 <p class="text">
                     Присоединяйтесь к нам и окунитесь в волшебный мир гитары, позвольте себе стать частью большой
                     семьи
                     любителей музыки. Начните путь к своей мечте вместе с нами!
-                </p>
+                </p> -->
 
-            </div>
-        </section>
-        <section>
+    <!-- </div>
+        </section> -->
+    <!-- <section>
             <div class="container">
                 <div class="table-bg">
                     <div class="table-title">
@@ -238,18 +415,18 @@
                                 <img class="person-progress-guitara" src="svg/guitargreen.png" alt="">
                                 <img class="person-progress-shadow" src="svg/shadowgreen.svg" alt="">
                             </div>
-                        </div>
-                        <div class="person-lesson">
+                        </div> -->
+    <!-- <div class="person-lesson">
                             <div class="person-name-lesson ">Техника </div>
                             <div class="person-rating-lesson">50</div>
                             <div class="person-role-lesson">Любитель</div>
                             <div class="person-progress-lesson">
                                 <img class="person-progress-guitara" src="svg/guitarsea.png" alt="">
-                                <img class="person-progress-shadow" src="svg/shadowpink.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-song">
+                                 <img class="person-progress-shadow" src="svg/shadowpink.svg" alt=""> -->
+    <!-- </div>
+                        </div> -->
+    </div>
+    <!-- <div class="table-song">
                         <div class="header-song">
                             <div class="header-song-name">ПЕСНИ</div>
                             <div class="header-song-stage">ЭТАПЫ</div>
@@ -267,30 +444,12 @@
                             <div class="person-song-stage">2</div>
                             <div class="person-song-genre">ОСТ</div>
                             <div class="person-song-scores">50</div>
-                        </div>
-                        <!-- <div class="person-song">
-                            <div class="person-song-name ">Теория</div>
-                            <div class="person-song-stage">70</div>
-                            <div class="person-song-genre">Меломан</div>
-                            <div class="person-song-scores">Гитарист</div>
-                        </div>
-                        <div class="person-song">
-                            <div class="person-song-name ">Импровизация </div>
-                            <div class="person-song-stage">60</div>
-                            <div class="person-song-genre">Новичок</div>
-                            <div class="person-song-scores">Гитарист</div>
-                        </div>
-                        <div class="person-song">
-                            <div class="person-song-name ">Техника </div>
-                            <div class="person-song-stage">50</div>
-                            <div class="person-song-genre">Любитель</div>
-                            <div class="person-song-scores">Гитарист</div>
                         </div> -->
-                    </div>
-                </div>
-
-        </section>
-        <footer>
+    <!-- </div>
+                </div> -->
+    <!-- 
+        </section> -->
+    <!-- <footer>
             <div class="container">
                 <div class="footer-wrap">
                     <div class="footer-contact">
@@ -327,7 +486,7 @@
                 </div>
             </div>
         </footer>
-    </div>
+    </div> -->
 </body>
 
 </html>
