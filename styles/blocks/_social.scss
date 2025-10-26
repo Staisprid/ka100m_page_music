@@ -13,4 +13,14 @@
     &__item{
         display: flex;
     }
+
+    &__link{
+        --size: #{rem(24)};
+
+        @include square(var(--size));
+
+        @include mobile {
+            --size: #{rem(20)};
+        }
+    }
 }

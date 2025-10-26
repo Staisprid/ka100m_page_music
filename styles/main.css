@@ -107,7 +107,6 @@ html {
     Пригодится в большинстве ситуаций
     (когда, например, нужно будет "прижать" футер к низу сайта)
    */
-  height: 100%;
   /**
     Убираем скачок интерфейса по горизонтали
     при появлении / исчезновении скроллбара
@@ -245,6 +244,7 @@ svg * {
   --color-accent: #0e9b4d;
   --color-red:#FF5500;
   --border: 0.125rem solid var(--color-accent);
+  --gradient: linear-gradient(45deg, var(--color-green) 65%, var(--color-violet) 134%);
   --font-family-base: "Montserrat", sans-serif;
   --font-family-accent: "Caveat", sans-serif;
   --container-width:100rem;
@@ -295,8 +295,8 @@ body {
   background-image: var(--color-bg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
+  line-height: normal;
+  text-align: justify;
 }
 
 main {
@@ -602,6 +602,37 @@ html.is-lock {
   }
 }
 
+.hero__main {
+  margin: 5vw 0;
+}
+.hero__title {
+  font-weight: 600;
+  font-size: 42px;
+  padding: 0 25px 70px 25px;
+}
+.hero__subtitle {
+  padding: 25px 0 45px 30px;
+}
+
+.title-name {
+  color: rgba(4, 240, 55, 0.699);
+  font-style: italic;
+}
+
+.text {
+  padding-bottom: 1rem;
+  text-indent: 25px;
+}
+
+.metrics__key {
+  margin: 2vw 1vw;
+  color: #07f873;
+}
+.metrics__value {
+  padding-bottom: 1rem;
+  text-indent: 25px;
+}
+
 .socials__list {
   display: flex;
   column-gap: 1.25rem;
@@ -614,19 +645,31 @@ html.is-lock {
 .socials__item {
   display: flex;
 }
+.socials__link {
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+}
+@media (width <= 47.99875rem) {
+  .socials__link {
+    --size: 1.25rem;
+  }
+}
 
 .footer__body {
   padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
 }
 .footer__menu {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: start;
+  display: flex;
+  justify-content: space-between;
   column-gap: clamp(1.25rem, 0.2941176471rem + 3.9215686275vw, 5rem);
 }
-.footer__menu-column {
-  display: grid;
-  row-gap: clamp(1rem, 0.681372549rem + 1.3071895425vw, 2.25rem);
+@media (width <= 47.99875rem) {
+  .footer__menu {
+    flex-direction: column;
+    row-gap: 2.5rem;
+    text-align: center;
+  }
 }
 .footer__menu-list {
   display: flex;
@@ -643,6 +686,20 @@ html.is-lock {
 @media (width <= 90.06125rem) {
   .footer__extra {
     padding-block: 1.5rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .footer__extra {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+}
+.footer__extra-menu-list {
+  display: flex;
+}
+@media (width <= 47.99875rem) {
+  .footer__socials {
+    order: -1;
   }
 }
 

@@ -5,17 +5,15 @@
     &__body{
         padding-block: fluid(80, 40);
     }
-
     &__menu{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: start;
+        display: flex;
+        justify-content: space-between;
         column-gap: fluid(80, 20);
 
-
-        &-column{
-            display: grid;
-            row-gap: fluid(36, 16);
+        @include mobile{
+            flex-direction: column;
+            row-gap: rem(40);
+            text-align: center;
         }
 
         &-list{
@@ -23,7 +21,6 @@
             flex-direction: column;
             row-gap: fluid(18, 8);
         }
-       
     }
 
     &__extra{
@@ -35,6 +32,23 @@
 
         @include laptop{
             padding-block: rem(24);
+        }
+
+        @include mobile{
+            flex-direction: column;
+            row-gap: rem(40);
+        }
+
+        &-menu {
+            &-list{
+                display: flex;
+            }
+        }
+    }
+
+    &__socials{
+        @include mobile {
+            order: -1;
         }
     }
 

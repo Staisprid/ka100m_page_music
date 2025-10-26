@@ -18,6 +18,8 @@
 
     --border: #{rem(2)} solid var(--color-accent);
 
+    --gradient: linear-gradient(45deg, var(--color-green) 65%, var(--color-violet) 134%);
+
     --font-family-base: 'Montserrat', sans-serif;
     --font-family-accent: 'Caveat', sans-serif;
 

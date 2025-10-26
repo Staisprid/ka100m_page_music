@@ -60,11 +60,11 @@
     }
 
     &__menu{
-
+        border: var(--border);
+        
         @include mobile{
             overflow-y: auto;
         }
-        border: var(--border);
         border-radius: rem(10);
         background-color:var(--color-violet);
         

@@ -8,9 +8,8 @@ body{
     background-image: var(--color-bg);
     background-repeat: no-repeat;
     background-size: cover;
-
-    display:flex;
-    flex-direction: column;
+    line-height: normal;
+    text-align: justify;
 }
 
 main{

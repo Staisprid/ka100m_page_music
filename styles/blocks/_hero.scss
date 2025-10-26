@@ -1,0 +1,37 @@
+@use '../helpers/' as *;
+
+.hero{
+    &__main{
+         margin: 5vw 0;
+    }
+
+    &__title{
+        font-weight: 600;
+        font-size: 42px;
+        padding: 0 25px 70px 25px;
+    }
+
+    &__subtitle{
+        padding: 25px 0 45px 30px;
+    }
+}
+.title-name{
+            color: rgba(4, 240, 55, 0.699);
+            font-style: italic;
+        }
+
+.text {
+    padding-bottom: 1rem;
+    text-indent: 25px;
+}
+.metrics{
+    &__key{
+        margin: 2vw 1vw;
+        color: #07f873;
+    }
+
+    &__value{
+        padding-bottom: 1rem;
+        text-indent: 25px;
+    }
+}
