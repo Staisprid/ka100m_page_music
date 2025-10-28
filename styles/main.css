@@ -633,6 +633,389 @@ html.is-lock {
   text-indent: 25px;
 }
 
+.table-bg {
+  background-color: rgba(88, 6, 241, 0.171);
+  border-radius: 20px;
+  padding: 50px;
+  border: 2px solid rgba(4, 240, 55, 0.699);
+}
+@media (width <= 63.99875rem) {
+  .table-bg {
+    padding: 25px;
+  }
+}
+
+.table-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 3rem;
+  padding-right: 2rem;
+}
+@media (width <= 63.99875rem) {
+  .table-title {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.top-name {
+  color: rgba(4, 240, 55, 0.699);
+}
+
+.table-name {
+  padding-left: 3rem;
+  font-size: 30px;
+  font-weight: 600;
+}
+@media (width <= 90.06125rem) {
+  .table-name {
+    padding: 1rem 0 1rem 0;
+    font-size: 25px;
+    font-weight: 500;
+  }
+}
+@media (width <= 63.99875rem) {
+  .table-name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+@media (width <= 47.99875rem) {
+  .table-name {
+    padding: 1rem 0 1rem 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.table-search {
+  cursor: pointer;
+  padding: 9px 200px 0 13px;
+  border: 2px solid rgba(29, 123, 167, 0.78);
+  border-radius: 20px;
+  font-size: 14px;
+  color: rgba(189, 177, 238, 0.445);
+  margin-top: 12px;
+  height: 40px;
+}
+@media (width <= 63.99875rem) {
+  .table-search {
+    padding: 9px 200px 7px 13px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .table-search {
+    padding: 9px 140px 7px 13px;
+  }
+}
+
+.table-search:hover {
+  color: #07f873;
+  border: 2px solid rgba(208, 231, 241, 0.78);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgba(17, 148, 209, 0.78);
+  padding: 10px 0;
+  background-color: rgba(137, 220, 231, 0.342);
+  font-weight: 600;
+  border-radius: 5px;
+}
+@media (width <= 90.06125rem) {
+  .table-header {
+    font-size: 14px;
+  }
+}
+@media (width <= 63.99875rem) {
+  .table-header {
+    margin: 5px 5px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .table-header {
+    display: none;
+  }
+}
+
+.table-person {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(17, 148, 209, 0.78);
+  background-color: rgba(116, 180, 223, 0.281);
+  padding: 10px 30px;
+  font-size: 13px;
+  margin: 10px 70px;
+  border-radius: 5px;
+}
+@media (width <= 90.06125rem) {
+  .table-person {
+    padding: 10px 30px;
+    margin: 10px 20px;
+  }
+}
+@media (width <= 63.99875rem) {
+  .table-person {
+    font-size: 12px;
+    padding: 10px 5px;
+    margin: 10px 10px;
+  }
+}
+@media (width > 63.99875rem) {
+  .table-person {
+    font-size: 12px;
+    padding: 5px 5px;
+    margin: 5px 10px;
+  }
+}
+@media (width <= 47.99875rem) {
+  .table-person {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.table-person:hover {
+  border: 2px solid rgba(191, 207, 214, 0.78);
+}
+
+.table-header-name,
+.table-header-progress,
+.table-person-name,
+.table-person-progress {
+  width: 270px;
+  text-align: center;
+}
+@media (width <= 90.06125rem) {
+  .table-header-name,
+  .table-header-progress,
+  .table-person-name,
+  .table-person-progress {
+    width: 180px;
+  }
+}
+@media (width <= 63.99875rem) {
+  .table-header-name,
+  .table-header-progress,
+  .table-person-name,
+  .table-person-progress {
+    width: 180px;
+  }
+}
+
+@media (width <= 47.99875rem) {
+  .table-person-name,
+  .table-person-progress {
+    font-size: 18px;
+    width: 240px;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+.table-person-rating,
+.table-header-role,
+.table-person-role,
+.table-header-rating {
+  width: 70px;
+  text-align: center;
+}
+@media (width <= 63.99875rem) {
+  .table-person-rating,
+  .table-header-role,
+  .table-person-role,
+  .table-header-rating {
+    width: 80px;
+    text-align: center;
+  }
+}
+
+@media (width <= 47.99875rem) {
+  .table-person-rating,
+  .table-person-role {
+    padding-top: 20px;
+    width: 70px;
+    text-align: center;
+  }
+}
+
+.card-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5.5rem 3rem 3rem;
+  margin: 10px 50px;
+}
+
+.card-level,
+.card-foto,
+.card-level-name,
+.card-bonus {
+  height: 9rem;
+  width: 9rem;
+}
+
+.card-foto {
+  background-color: rgba(0, 211, 95, 0.4235294118);
+  position: relative;
+  border: 1px solid rgba(17, 148, 209, 0.78);
+}
+
+.foto-img {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.card-level {
+  margin-left: 3rem;
+  font-weight: 500;
+}
+
+.card-level-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 4.5rem;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: #07f873;
+}
+
+.card-level {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.card-bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 3rem;
+}
+
+.bonus-guitar {
+  padding-left: 50px;
+}
+
+.card-level-scale {
+  padding: 2px;
+  border: 2px solid rgba(4, 240, 55, 0.699);
+  border-radius: 10px;
+}
+
+.header-user {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgba(17, 148, 209, 0.78);
+  padding: 10px 50px;
+  background-color: rgba(137, 220, 231, 0.342);
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 10px 50px;
+}
+
+.person-lesson {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(17, 148, 209, 0.78);
+  background-color: rgba(116, 180, 223, 0.281);
+  padding: 10px 30px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin: 10px 70px;
+}
+
+.person-lesson:hover {
+  box-shadow: inset 2px -3px 2px rgba(0, 255, 55, 0.8);
+  border: 2px solid rgba(9, 206, 2, 0.78);
+}
+
+.header-name-lesson,
+.header-progress-lesson,
+.person-name-lesson,
+.person-progress-lesson,
+.header-role-lesson,
+.person-role-lesson {
+  width: 270px;
+  text-align: center;
+  padding-right: 15px;
+}
+
+.header-rating-lesson,
+.person-rating-lesson {
+  width: 70px;
+  text-align: center;
+}
+
+.person-progress-lesson {
+  position: relative;
+}
+
+.person-progress-guitara {
+  display: block;
+  position: absolute;
+  margin-top: -25px;
+}
+
+.person-progress-shadow {
+  display: block;
+  position: absolute;
+  margin-top: -20px;
+  right: 10%;
+  top: 2px;
+}
+
+.header-song {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 5rem 0.5rem 3rem;
+  font-weight: 600;
+  margin: 10px 70px;
+}
+
+.header-song-name,
+.person-song-name {
+  width: 320px;
+  text-align: left;
+}
+
+.header-song-stage,
+.header-song-scores,
+.header-song-genre,
+.person-song-stage,
+.person-song-genre,
+.person-song-scores {
+  width: 70px;
+  text-align: center;
+}
+
+.person-song {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(91, 17, 209, 0.78);
+  background-color: rgba(109, 135, 151, 0.582);
+  padding: 0.5rem 5rem 0.5rem 3rem;
+  font-size: 13px;
+  margin: 10px 70px;
+  border-radius: 5px;
+}
+
+.person-song:hover {
+  box-shadow: inset 2px -3px 2px rgba(0, 255, 55, 0.8);
+  border: 1px solid rgba(9, 206, 2, 0.78);
+}
+
 .socials__list {
   display: flex;
   column-gap: 1.25rem;

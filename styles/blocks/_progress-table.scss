@@ -1,0 +1,181 @@
+@use '../helpers/' as *;
+
+.card-profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5.5rem 3rem 3rem;
+    margin: 10px 50px;
+}
+
+.card-level,
+.card-foto,
+.card-level-name,
+.card-bonus {
+    height: 9rem;
+    width: 9rem;
+}
+
+.card-foto {
+    background-color: #00d35f6c;
+    position: relative;
+    border: 1px solid rgba(17, 148, 209, 0.78);
+}
+
+.foto-img {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    height: 4rem;
+    width: 4rem;
+}
+
+.card-level {
+    margin-left: 3rem;
+    font-weight: 500;
+
+}
+
+
+.card-level-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 4.5rem;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: #07f873;
+
+}
+
+
+.card-level {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.card-bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+.bonus-guitar {
+    padding-left: 50px;
+}
+
+.card-level-scale {
+    padding: 2px;
+    border: 2px solid rgba(4, 240, 55, 0.699);
+    border-radius: 10px;
+}
+
+.header-user {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgba(17, 148, 209, 0.78);
+    padding: 10px 50px;
+    background-color: rgba(137, 220, 231, 0.342);
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+
+.person-lesson {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(17, 148, 209, 0.78);
+    background-color: rgba(116, 180, 223, 0.281);
+    padding: 10px 30px;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 10px 70px;
+}
+
+.person-lesson:hover {
+    box-shadow: inset 2px -3px 2px rgb(0, 255, 55, 0.8);
+    border: 2px solid rgba(9, 206, 2, 0.78);
+}
+
+.header-name-lesson,
+.header-progress-lesson,
+.person-name-lesson,
+.person-progress-lesson,
+.header-role-lesson,
+.person-role-lesson {
+    width: 270px;
+    text-align: center;
+    padding-right: 15px;
+}
+
+
+.header-rating-lesson,
+.person-rating-lesson {
+    width: 70px;
+    text-align: center;
+}
+
+.person-progress-lesson {
+    position: relative;
+}
+
+.person-progress-guitara {
+    display: block;
+    position: absolute;
+    margin-top: -25px;
+}
+
+.person-progress-shadow {
+    display: block;
+    position: absolute;
+    margin-top: -20px;
+    right: 10%;
+    top: 2px;
+
+}
+
+.header-song {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem 0.5rem 3rem;
+    font-weight: 600;
+    margin: 10px 70px;
+}
+
+.header-song-name,
+.person-song-name {
+    width: 320px;
+    text-align: left;
+}
+
+.header-song-stage,
+.header-song-scores,
+.header-song-genre,
+.person-song-stage,
+.person-song-genre,
+.person-song-scores {
+    width: 70px;
+    text-align: center;
+}
+
+.person-song {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(91, 17, 209, 0.78);
+    background-color: rgba(109, 135, 151, 0.582);
+    padding: 0.5rem 5rem 0.5rem 3rem;
+    font-size: 13px;
+    margin: 10px 70px;
+    border-radius: 5px;
+}
+
+.person-song:hover {
+    box-shadow: inset 2px -3px 2px rgb(0, 255, 55, 0.8);
+    border: 1px solid rgba(9, 206, 2, 0.78);
+}
