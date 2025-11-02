@@ -5,6 +5,23 @@
     justify-content: space-between;
     padding: 3rem 5.5rem 3rem 3rem;
     margin: 10px 50px;
+
+    @include laptop{
+        padding: 1rem 2rem 1rem 1rem;
+        margin: 10px 50px;
+    }
+
+    @include tablet{
+        padding: 1rem 2rem 1rem 1rem;
+        margin: 5px 25px;
+    }
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px 50px;
+    }
 }
 
 .card-level,
@@ -13,7 +30,23 @@
 .card-bonus {
     height: 9rem;
     width: 9rem;
+
+    @include tablet{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    @include mobile{
+        height: 9rem;
+        width: 9rem;
+    }
 }
+
+.card-level {
+        @include mobile-above{
+            margin-left: 0.5rem;
+        }
+    }
 
 .card-foto {
     background-color: #00d35f6c;
@@ -21,17 +54,40 @@
     border: 1px solid rgba(17, 148, 209, 0.78);
 }
 
+.card-level-name {
+        @include mobile-above{
+            margin-right: 0.8rem;
+        }
+    }
+
 .foto-img {
     position: absolute;
     left: 30%;
     top: 30%;
     height: 4rem;
     width: 4rem;
+
+    // @include tablet{
+    //     position: absolute;
+    //     left: 30%;
+    //     top: 30%;
+    //     height: 2rem;
+    //     width: 2rem;
+    // }
+
+    // @include mobile-above{
+    //     height: 4rem;
+    //     width: 4rem;
+    // }
 }
 
 .card-level {
     margin-left: 3rem;
     font-weight: 500;
+
+    @include tablet{
+        margin-left: 1rem;
+    }
 
 }
 
@@ -46,6 +102,22 @@
     font-optical-sizing: auto;
     font-weight: 600;
     color: #07f873;
+
+    @include laptop{
+        margin-right: 1rem;
+    }
+
+    @include tablet {
+        margin-right: 1rem;
+    }
+
+    @include mobile-above{
+        height: 5rem;
+        width: 7rem;
+        top: -20px;
+        margin: 0;
+        align-items: center;
+    }
 
 }
 
@@ -64,10 +136,25 @@
     justify-content: space-around;
     text-align: center;
     margin-right: 3rem;
+
+    @include mobile-above{
+        height: 5rem;
+        width: 7rem;
+        top: -20px;
+        margin: 0;
+        align-items: center;
+    }
 }
 
 .bonus-guitar {
     padding-left: 50px;
+
+    @include tablet{
+        width: 64px;
+        height: 64px;
+        padding-left: 0;
+    }
+    
 }
 
 .card-level-scale {
@@ -80,11 +167,21 @@
     display: flex;
     justify-content: space-between;
     border: 3px solid rgba(17, 148, 209, 0.78);
-    padding: 10px 50px;
+    padding: 10px 30px;
     background-color: rgba(137, 220, 231, 0.342);
     font-weight: 600;
     border-radius: 5px;
     margin: 10px 50px;
+
+    @include tablet{
+        margin: 0;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    @include mobile{
+        display: none;
+    }
 }
 
 .person-lesson {
@@ -96,7 +193,41 @@
     font-size: 13px;
     border-radius: 5px;
     margin: 10px 70px;
+
+    @include tablet{
+        padding: 10px 5px;
+        font-size: 13px;
+        margin: 10px 5px;
+    }
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 220px;
+        margin: 30px auto;
+        padding: 10px 5px;
+        font-size: 17px;
+    }
 }
+
+.person-name-lesson,
+.person-progress-lesson,
+.person-role-lesson {
+        @include mobile{
+            font-size: 18px;
+            width: 110px;
+            text-align: center;
+            padding: 20px 5px;
+        }
+}
+
+.person-improvisation {
+        @include mobile{
+            margin-right: 30px;
+        }
+    }
+
 
 .person-lesson:hover {
     box-shadow: inset 2px -3px 2px rgb(0, 255, 55, 0.8);
@@ -112,6 +243,16 @@
     width: 270px;
     text-align: center;
     padding-right: 15px;
+
+    @include laptop{
+        width: 170px;
+    }
+
+    @include tablet{
+        width: 150px;
+        text-align: left;
+        padding-left: 5px;
+    }
 }
 
 
@@ -119,24 +260,86 @@
 .person-rating-lesson {
     width: 70px;
     text-align: center;
+
+    @include laptop{
+        width: 50px;
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    @include tablet{
+        width: 40px;
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    @include mobile{
+        width: 40px;
+        text-align: center;
+        padding-right: 5px;
+    }
 }
 
 .person-progress-lesson {
     position: relative;
+
+    @include laptop{
+        padding: 10px 20px;
+        font-size: 13px;
+        margin: 10px 40px;
+    }
 }
 
 .person-progress-guitara {
     display: block;
     position: absolute;
     margin-top: -25px;
+    max-width: 200%;
+    padding-right: 3rem;
+
+    @include laptop{
+        padding-right: 0.1rem;
+    }
+
+    @include tablet{
+       padding-right: 1rem;
+    }
+
+    @include mobile-above{
+        right: -35px;
+        top: 5px;
+    }
+
+    @include mobile{
+        right: -2.4rem;
+    }
 }
 
 .person-progress-shadow {
     display: block;
     position: absolute;
     margin-top: -20px;
-    right: 10%;
     top: 2px;
+    max-width: 200%;
+    right: 10px;
+    // padding-right: 3rem;
+    
+    
+
+    @include laptop{
+        // padding-right: 0.1rem; 
+         right: -30px;
+    }
+
+    @include mobile-above{
+        top: 5px;
+        // right: -65px;
+    }
+
+    @include mobile{
+        top: 0.8rem;
+        right: -2.4rem;
+    }
 
 }
 
@@ -146,13 +349,47 @@
     padding: 0.5rem 5rem 0.5rem 3rem;
     font-weight: 600;
     margin: 10px 70px;
+
+    @include laptop{
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        font-weight: 600;
+        margin: 10px 50px;
+    }
+
+    @include tablet-above {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        font-weight: 600;
+        margin: 10px 30px;
+    }
+
+    @include tablet{
+        font-size: 14px;
+        padding: 0.5rem 0 0.5rem 0;
+        font-weight: 600;
+        margin: 10px 10px;
+    }
 }
 
 .header-song-name,
 .person-song-name {
     width: 320px;
     text-align: left;
+
+    @include tablet{
+        width: 270px;
+    }
+
+    @include mobile{
+        width: 190px;
+    }
 }
+
+.header-song-name {
+        @include mobile{
+            text-align: center;
+        margin-left: 30px;
+        }
+    }
 
 .header-song-stage,
 .header-song-scores,
@@ -162,6 +399,21 @@
 .person-song-scores {
     width: 70px;
     text-align: center;
+
+    @include mobile-above{
+        font-size: 12px;
+        width: 90px;
+        text-align: left;
+        padding: 0 5px;
+    }
+}
+
+.header-song-stage,
+.header-song-genre,
+.header-song-scores {
+        @include mobile{
+            display: none;
+        }
 }
 
 .person-song {
@@ -173,6 +425,21 @@
     font-size: 13px;
     margin: 10px 70px;
     border-radius: 5px;
+
+    @include laptop{
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        margin: 10px 50px;
+    }
+
+    @include tablet-above{
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 10px 30px;
+    }
+
+    @include tablet{
+        padding: 0.5rem 0 0.5rem 0;
+        margin: 10px 10px;
+    }
 }
 
 .person-song:hover {
