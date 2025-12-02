@@ -1,0 +1,46 @@
+@use '../helpers/' as *;
+
+.teacher{
+    padding: 50px 25px 70px 25px;
+    
+    &__title{
+        margin: 2vw 1vw;
+        color: #07f873;
+    }
+
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    &__text{
+        padding-left: 16rem;
+        margin-top: -15rem;
+    }
+
+}
+
+.circle-frame{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 15px  #37ad6c;
+    transition: transform 0.3s ease-in-out;
+
+    &__img{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+    }
+
+    &:hover{
+        transform: scale(1.05);
+    }
+    
+}
+

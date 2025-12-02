@@ -74,7 +74,8 @@
             column-gap: rem(16);
 
             @include laptop{
-                column-gap: rem(6);
+                font-size: 16px;
+                column-gap: rem(4);
             }
             @include mobile{
                 flex-direction: column;

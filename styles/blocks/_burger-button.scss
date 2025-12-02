@@ -32,12 +32,18 @@
     }
 
     &__line{
-        width: 100%;
-        height: rem(2);
-        border-radius: 1rem;
-        background-color: currentColor;
-        transition-duration: var(--transition-duration);
+        display: none;
 
+        @include tablet{
+            display:block;
+            width: 100%;
+            height: rem(2);
+            border-radius: 1rem;
+            background-color: currentColor;
+            transition-duration: var(--transition-duration);
+
+        }
+        
         &:last-child{
             width: 55%;
             align-self: end;
