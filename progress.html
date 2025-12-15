@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>KA100M | Достижения</title>
     <script src="./scripts/main.js" type="module" defer></script>
+    <script src="./scripts/details.js" type="module" defer></script>
 </head>
 
 <body>
@@ -68,11 +69,13 @@
                     <div class="card-back">
                         <img src="svg/Arrow 1.svg" alt="">
                     </div>
-                    <header>
-                        <h2 class="table-name">Антон Серебряков</h2>
-                    </header>
 
-                    <div class="card-profile">
+
+                    <!-- <header>
+                        <h2 class="table-name">Антон Серебряков</h2>
+                    </header> -->
+
+                    <!-- <div class="card-profile">
                         <div class="card-foto">
                             <div class="card-foto-img"><img class="foto-img" src="svg/card-avatar.svg" alt=""></div>
 
@@ -92,75 +95,84 @@
                             <div class="header-name-lesson">ПРОХОЖДЕНИЕ</div>
                             <div class="header-rating-lesson">LvL</div>
                             <!-- <div class="header-role-lesson">ДОСТИЖЕНИЯ</div> -->
-                            <div class="header-progress-lesson">РЕЙТИНГ</div>
+                    <!-- <div class="header-progress-lesson">Достижения</div>
                         </div>
                         <div class="person-lesson">
                             <div class="person-name-lesson ">Основы </div>
-                            <div class="person-rating-lesson">100</div>
-                            <!-- <div class="person-role-lesson">Rockstar</div> -->
-                            <div class="person-progress-lesson">
+                            <div class="person-rating-lesson">100</div> -->
+                    <!-- <div class="person-role-lesson">Rockstar</div> -->
+                    <!-- <div class="person-progress-lesson">
                                 <img class="person-progress-guitara" src="svg/guitarfire.png" alt="">
                                 <img class="person-progress-shadow" src="svg/shadowpink.svg" alt="">
                             </div>
                         </div>
                         <div class="person-lesson">
                             <div class="person-name-lesson ">Практика </div>
-                            <div class="person-rating-lesson">90</div>
-                            <!-- <div class="person-role-lesson">Учитель</div> -->
-                            <div class="person-progress-lesson">
+                            <div class="person-rating-lesson">90</div> -->
+                    <!-- <div class="person-role-lesson">Учитель</div> -->
+                    <!-- <div class="person-progress-lesson">
                                 <img class="person-progress-guitara" src="svg/guitarblue.png" alt="">
                                 <img class="person-progress-shadow" src="svg/shadowblue.svg" alt="">
                             </div>
                         </div>
                         <div class="person-lesson">
                             <div class="person-name-lesson ">Теория</div>
-                            <div class="person-rating-lesson">70</div>
-                            <!-- <div class="person-role-lesson">Меломан</div> -->
-                            <div class="person-progress-lesson">
+                            <div class="person-rating-lesson">70</div> -->
+                    <!-- <div class="person-role-lesson">Меломан</div> -->
+                    <!-- <div class="person-progress-lesson">
                                 <img class="person-progress-guitara" src="svg/violet.png" alt="">
                                 <img class="person-progress-shadow" src="svg/shadowviolet.svg" alt="">
                             </div>
                         </div>
                         <div class="person-lesson">
                             <div class="person-name-lesson person-improvisation">Импровизация </div>
-                            <div class="person-rating-lesson">60</div>
-                            <!-- <div class="person-role-lesson">Новичок</div> -->
-                            <div class="person-progress-lesson">
+                            <div class="person-rating-lesson">60</div> -->
+                    <!-- <div class="person-role-lesson">Новичок</div> -->
+                    <!-- <div class="person-progress-lesson">
                                 <img class="person-progress-guitara" src="svg/guitargreen.png" alt="">
                                 <img class="person-progress-shadow" src="svg/shadowgreen.svg" alt="">
                             </div>
                         </div>
                         <div class="person-lesson">
                             <div class="person-name-lesson ">Техника </div>
-                            <div class="person-rating-lesson">50</div>
-                            <!-- <div class="person-role-lesson">Любитель</div> -->
-                            <div class="person-progress-lesson">
+                            <div class="person-rating-lesson">50</div> -->
+                    <!-- <div class="person-role-lesson">Любитель</div> -->
+                    <!-- <div class="person-progress-lesson">
                                 <img class="person-progress-guitara" src="svg/guitarsea.png" alt="">
                                 <img class="person-progress-shadow" src="svg/shadowpink.svg" alt="">
                             </div>
-                        </div>
-                        <div class="table-song">
-                            <div class="header-song">
-                                <div class="header-song-name">ПЕСНИ</div>
-                                <div class="header-song-stage">ЭТАПЫ</div>
-                                <div class="header-song-genre">ЖАНР</div>
-                                <div class="header-song-scores">БАЛЛЫ</div>
-                            </div>
-                            <div class="person-song">
-                                <div class="person-song-name">1. Гуль </div>
-                                <div class="person-song-stage">2</div>
-                                <div class="person-song-genre">ОСТ</div>
-                                <div class="person-song-scores">50</div>
-                            </div>
-                            <div class="person-song">
-                                <div class="person-song-name ">1. Гуль </div>
-                                <div class="person-song-stage">2</div>
-                                <div class="person-song-genre">ОСТ</div>
-                                <div class="person-song-scores">50</div>
-                            </div>
-                        </div>
-                    </div>
+                        </div> -->
 
+                    <div id="student-details"></div>
+
+
+                    <!-- <div class="table-song">
+                        <div class="header-song">
+                            <div class="header-song-name">ПЕСНИ</div>
+                            <div class="header-song-stage">ЭТАПЫ</div>
+                            <div class="header-song-genre">ЖАНР</div>
+                            <div class="header-song-scores">БАЛЛЫ</div>
+                        </div>
+                        <div class="person-song">
+                            <div class="person-song-name">1. Гуль </div>
+                            <div class="person-song-stage">2</div>
+                            <div class="person-song-genre">ОСТ</div>
+                            <div class="person-song-scores">50</div>
+                        </div>
+                        <div class="person-song">
+                            <div class="person-song-name ">1. Гуль </div>
+                            <div class="person-song-stage">2</div>
+                            <div class="person-song-genre">ОСТ</div>
+                            <div class="person-song-scores">50</div>
+                        </div>
+                    </div> -->
+                </div>
+
+
+
+                <button onclick="goBack()">Назад</button>
+            </div>
+            </div>
         </section>
 
     </main>

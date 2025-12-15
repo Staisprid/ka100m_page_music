@@ -12,6 +12,10 @@
     }
 }
 
+.table-content{
+    margin: auto;
+}
+
 .table-title {
     display: flex;
     justify-content: space-between;
@@ -81,21 +85,20 @@
 }
 
 .table-header {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     border: 3px solid rgba(17, 148, 209, 0.78);
-    padding: 10px 0;
+    margin: 0 50px;
     background-color: rgba(137, 220, 231, 0.342);
     font-weight: 600;
     border-radius: 5px;
-
     @include laptop{
         // padding: 10px 20px;
         font-size: 14px;
     }
 
     @include tablet{
-        margin: 5px 5px;
+        // margin: 5px 5px;
         // padding: 5px 5px;
     }
 
@@ -105,30 +108,30 @@
 }
 
 .table-person {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    border-radius: 5px;
     border: 2px solid rgba(17, 148, 209, 0.78);
     background-color: rgba(116, 180, 223, 0.281);
-    padding: 10px 30px;
     font-size: 13px;
-    margin: 10px 70px;
-    border-radius: 5px;
+    // padding: 10px 30px;
+    margin: 5px 50px;
+    
 
-    @include laptop{
-        padding: 10px 30px;
-        margin: 10px 20px;
-    }
+    // @include laptop{
+    //     padding: 10px 30px;
+    //     margin: 10px 20px;
+    // }
 
     @include tablet{
         font-size: 12px;
-        padding: 10px 5px;
-        margin: 10px 10px;
+        // padding: 10px 5px;
+        // margin: 10px 10px;
     }
 
     @include tablet-above{
         font-size: 12px;
-        padding: 5px 5px;
-        margin: 5px 10px;
+        // padding: 5px 5px;
+        // margin: 5px 10px;
     }
 
     @include mobile{
@@ -137,25 +140,26 @@
     }
 }
 
-.table-person:hover {
-    border: 2px solid rgba(191, 207, 214, 0.78);
+a{
+    text-decoration: none;
 }
+
 
 .table-header-name,
 .table-header-progress,
 .table-person-name,
 .table-person-progress {
-    width: 270px;
+    width: 20rem;
     text-align: center;
     // padding-right: 15px;
 
-    @include laptop{
-        width: 180px;
-    }
+    // @include laptop{
+    //     width: 180px;
+    // }
 
-    @include tablet{
-         width: 180px;
-    }
+    // @include tablet{
+    //      width: 180px;
+    // }
 
 }
 
@@ -163,9 +167,8 @@
 .table-person-progress{
          @include mobile{   
             font-size: 18px;
-            width: 240px;
             text-align: center;
-            padding: 15px;
+            // padding: 15px;
         }
     }
 
@@ -173,11 +176,10 @@
 .table-header-role,
 .table-person-role,
 .table-header-rating {
-    width: 70px;
+    width: 10rem;
     text-align: center;
 
-    @include tablet{
-        width: 80px;
+    @include tablet{      
         text-align: center;
     }
 
@@ -186,8 +188,7 @@
 .table-person-rating,
 .table-person-role {
         @include mobile{
-            padding-top: 20px;
-            width: 70px;
+            // padding-top: 20px; 
             text-align: center;
 
         }    

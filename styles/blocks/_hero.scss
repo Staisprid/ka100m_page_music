@@ -31,7 +31,58 @@
     }
 
     &__value{
-        padding-bottom: 1rem;
-        text-indent: 25px;
+        padding-bottom: 2rem;
     }
 }
+
+
+
+
+// table {
+//   width: 100%;
+//   border-collapse: collapse;
+// }
+
+// th, td {
+//   padding: 20px;
+//   border: 1px solid #05d16b;
+//   text-align: left;
+// }
+
+
+// tr:hover {
+//             background-color: #7807e2;
+//             transition: height 0.3s ease-in-out; /* Плавный переход */
+//             height: 60px; /* Увеличенная высота строки */
+//         }
+
+// tr {
+//             height: 40px; /* Стандартная высота строки */
+//             transition: height 0.3s ease-in-out; /* Чтобы обеспечить плавный переход обратно */
+//         }
+
+
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr {
+    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 5px;
+    border: 2px solid #07f873;
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+  }
+tbody tr:hover {
+    transform: scaleY(1.1);
+    background-color: #5179a7;
+  }
+
+
+
+// tr {
+//   transition: transform #{$transition-duration};
+// }

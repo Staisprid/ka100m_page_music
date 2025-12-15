@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>KA100M | Уроки</title>
     <script src="./scripts/main.js" type="module" defer></script>
+    <script src="./scripts/Lessons.js" type="module" defer></script>
 </head>
 
 <body>
@@ -62,7 +63,160 @@
 
     </header>
     <main class="main wrapper">
+        <nav aria-label="Выбор курса">
+            <!-- <ul class="tabs-list">
+                <li class="content-link">
+                    <a href="#" data-tab="basics" class="content-items">Основы</a>
+                </li>
+                <li class="content-link">
+                    <a href="#" data-tab="theory" id="first1" class="content-items">Теория</a>
+                </li>
+                <li class="content-link">
+                    <a href="#" data-tab="practice" class="content-item">Практика</a>
+                </li>
+                <li class="content-link">
+                    <a href="#" data-tab="improvisation" class="content-item">Импровизация</a>
+                </li>
+            </ul> -->
+            <div class="container">
+                <div class="cards">
+                    <div class="card" data-target="basics">
+                        Основы
+                    </div>
+                    <div class="card" data-target="theory">
+                        Теория
+                    </div>
+                    <div class="card" data-target="practice">
+                        Практика
+                    </div>
+                    <div class="card" data-target="songs">
+                        Песни
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- Контент для Основ -->
+            <div class="content basics">
+                <!-- <img src="./img/lesbasic1.jpg" alt="Основы">
+                <h3>Основы курса</h3>
+                <ol>
+                    <li>Что такое основы?</li>
+                    <li>Основные принципы изучения основ.</li>
+                    <li>Типичные ошибки новичков.</li>
+                </ol> -->
 
+                <div class="circle-wrap">
+                    <div class="menu-circle" id="lessonMenu">
+                        <div class="circle" data-index="0">1</div>
+                        <div class="circle" data-index="1">2</div>
+                        <div class="circle" data-index="2">3</div>
+                        <div class="circle" data-index="3">4</div>
+                        <div class="circle" data-index="4">5</div>
+                    </div>
+                    <!-- Область с картинками -->
+                    <div class="images" id="lessonImages">
+                        <img src="./img/lesbasic1.jpg" alt="Картинка 1" data-index="0" />
+                        <img src="./img/Anton.jpg" alt="Картинка 2" data-index="1" />
+                        <img src="./img/friends.jpg" alt="Картинка 3" data-index="2" />
+                        <img src="./img/lesbasic1.jpg" alt="Картинка 4" data-index="3" />
+                        <img src="./img/lesbasic1.jpg" alt="Картинка 5" data-index="4" />
+                    </div>
+
+                    <div class="questions">
+                        <div class="question" data-index="0">
+                            <p>Урок 1</p>
+                            <p>Тема. Табулатура. Первые мелодии.</p>
+                            <p>а)Как зажимается нота(струна)?</p>
+                            <p>б)Как понимать табы?</p>
+                        </div>
+                        <div class="question" data-index="1">Вопросы к картинке 2</div>
+                        <div class="question" data-index="2">Вопросы к картинке 3</div>
+                        <div class="question" data-index="3">Вопросы к картинке 4</div>
+                        <div class="question" data-index="4">Вопросы к картинке 5</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Контент для Теории -->
+            <div class="content theory">
+                <img src="./img/lesbasic1.jpg" alt="Теория">
+                <h3>Теоретический курс</h3>
+                <ol>
+                    <li>Базовые понятия теории.</li>
+                    <li>Формулы и концепции.</li>
+                    <li>Практические рекомендации.</li>
+                </ol>
+            </div>
+
+            <!-- Контент для Практики -->
+            <div class="content practice">
+                <img src="./img/lesbasic1.jpg" alt="Практика">
+                <h3>Практический курс</h3>
+                <ol>
+                    <li>Упражнения для практики.</li>
+                    <li>Советы по выполнению заданий.</li>
+                    <li>Распространённые трудности.</li>
+                </ol>
+            </div>
+
+            <!-- Контент для Песен -->
+            <div class="content songs">
+                <img src="./img/lesbasic1.jpg" alt="Песни">
+                <h3>Музыкальный курс</h3>
+                <ol>
+                    <li>Популярные песни для начинающих.</li>
+                    <li>Аранжировки песен.</li>
+                    <li>Методы запоминания текста.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- <section id="basics" class="tab-content">
+            <div class="video-player">
+            <img src="./img/lesbasic1.jpg" alt="">
+            <video autoplay muted loop playsinline poster="./img/VID20220604173045.mp4" id="video-player"></video>
+            <button type="button" class="btn-next-video primary">Следующее видео →</button>
+        </div>
+            <div class="circle-wrap">
+                <div class="menu-circle" id="lessonMenu">
+                    <div class="circle" data-index="0">1</div>
+                    <div class="circle" data-index="1">2</div>
+                    <div class="circle" data-index="2">3</div>
+                    <div class="circle" data-index="3">4</div>
+                    <div class="circle" data-index="4">5</div>
+                </div>
+                <!-- Область с картинками -->
+        <!-- <div class="images" id="lessonImages">
+            <img src="./img/lesbasic1.jpg" alt="Картинка 1" data-index="0" />
+            <img src="./img/Anton.jpg" alt="Картинка 2" data-index="1" />
+            <img src="./img/friends.jpg" alt="Картинка 3" data-index="2" />
+            <img src="./img/lesbasic1.jpg" alt="Картинка 4" data-index="3" />
+            <img src="./img/lesbasic1.jpg" alt="Картинка 5" data-index="4" />
+        </div>
+
+        <div class="questions">
+            <div class="question" data-index="0">Вопросы к картинке 1</div>
+            <div class="question" data-index="1">Вопросы к картинке 2</div>
+            <div class="question" data-index="2">Вопросы к картинке 3</div>
+            <div class="question" data-index="3">Вопросы к картинке 4</div>
+            <div class="question" data-index="4">Вопросы к картинке 5</div>
+        </div>
+        </div>
+
+        </section> -->
+        <!-- <section id="theory" class="tab-content">
+        <h2>Музыкальная теория</h2>
+        <p>Изучайте музыкальную теорию вместе с нами.</p>
+    </section>
+    <section id="practice" class="tab-content">
+        <h2>Практическое обучение</h2>
+        <p>Развивайте ваши музыкальные навыки на практике.</p>
+    </section>
+    <section id="improvisation" class="tab-content">
+        <h2>Искусство импровизации</h2>
+        <p>Учимся выражать себя через музыку свободно и творчески.</p>
+    </section> -->
     </main>
 
     <footer class="footer wrapper">

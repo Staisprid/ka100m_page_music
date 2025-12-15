@@ -2,6 +2,10 @@
 
 .teacher{
     padding: 50px 25px 70px 25px;
+
+    @include mobile{
+            font-size: 14px;
+        }
     
     &__title{
         margin: 2vw 1vw;
@@ -11,14 +15,52 @@
     &__block{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
         padding: 2rem;
+
+        @include tablet{
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include mobile{
+            font-size: 14px;
+            padding: 0.1rem;
+        }
     }
 
     &__text{
         padding-left: 16rem;
         margin-top: -15rem;
+
+        @include tablet{
+            padding-left: 0.5rem;
+            margin-top: -1rem;
+        }
+
+        @include mobile{
+        margin-top: -1rem;
+        font-size: 14px;
     }
+
+    }
+
+    // @include laptop{
+    //     padding: 1rem;
+    // }
+
+    // @include tablet{
+    //     padding: 0.5rem;
+    //     margin-left: 2rem;
+    // }
+
+    // @include mobile-above{
+    //     font-size: 15px;
+    //     margin-left: 1rem;
+    // }
+
+    
+
 
 }
 
@@ -42,5 +84,15 @@
         transform: scale(1.05);
     }
     
+    @include laptop{
+        width: 11rem;
+        height: 11rem;
+    }
+
+    @include tablet{
+        margin: 3rem 0;
+        width: 9rem;
+        height: 9rem;
+    }
 }
 

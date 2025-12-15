@@ -1,0 +1,226 @@
+@use '../helpers/' as *;
+
+// .button { 
+//     &.primary { 
+//         background-color: var(--color-green); 
+//         color: var(--color-white); 
+//         padding: 0.5em 1em; 
+//         border: none; 
+//         cursor: pointer; 
+//         transition: background-color 0.3s ease-in-out; 
+//         &:hover { 
+//             background-color: var(--color-light); 
+//         } 
+//     } 
+// }
+
+//  .tabs-list { 
+//     list-style-type: none; 
+//     display: flex; 
+//     justify-content: center; 
+//     gap: 1rem; 
+//     // margin-bottom: 2rem; 
+//     li { 
+//         margin: 0; 
+//     } 
+//     a { 
+//         text-decoration: none; 
+//         color: rgb(167, 168, 168); 
+//         padding: 2em 1em; 
+//         // transition: all 0.3s ease-in-out; 
+//         // position: relative; 
+//         // z-index: 1; 
+//         &.active { 
+//             color: rgb(250, 252, 251); 
+//             background-color: var(--color-black); 
+//         } 
+//         // &::before { 
+//         //     content: ''; 
+//         //     position: absolute; 
+//         //     top: 0; 
+//         //     left: 0; 
+//         //     right: 0; 
+//         //     bottom: 0; 
+//         //     // transform: scaleY(0); 
+//         //     // transform-origin: bottom; 
+//         //     background-color: var(--color-violet); 
+//         //     opacity: 0.8; 
+//         //     // transition: transform 0.3s cubic-bezier(.16,.84,.44,1); 
+//         //     z-index: -1;
+//         // } 
+//         // &.active::before { 
+//         //     // transform: scaleY(1); 
+//         // } 
+//     } 
+// } 
+// .tab-content { 
+//     margin: 5rem 14rem 5rem 10rem;
+//     display: none; 
+//     padding: 1rem;
+//     border-radius: 0.5rem; 
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; 
+//     background-color: rgba(4, 114, 99, 0.541); 
+//     &.active { 
+//         display: block; 
+//     } 
+// }
+
+// .video-player { 
+//     position: relative; 
+//     overflow: hidden; 
+//     padding-bottom: 56.25%; 
+//     /* Соотношение сторон 16:9 */ 
+//     height: 0; 
+// }
+
+// img, video { 
+//     margin: auto;
+//     max-width: 70%; 
+//     height: auto; 
+// } 
+
+// .container { 
+//     max-width: 1200px; 
+//     margin: 0 auto; 
+//     padding: 0 1rem; } 
+// // .header { 
+// //     text-align: center; 
+// //     padding: 1rem 0; } 
+// .main { 
+//     padding: 2rem 0; }
+
+// .content-link {
+//     font-size: 18px;
+//     padding: 40px 20px;
+//     border-radius: 10px;
+//     border: 2px solid rgba(14, 168, 52, 0.747);
+//     background-color: rgba(55, 35, 129, 0.438);
+// }
+
+// .content-item:focus {
+//     outline: none;
+//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.048); /* Измените цвет и толщину */
+//     background-color: rgba(49, 35, 82, 0.11); /* Можно изменить фоновый цвет */
+// }
+
+
+
+
+
+
+
+
+.cards {
+      display: flex;
+      justify-content: space-around;
+      margin: 30px;
+      gap: 20px;
+    }
+    .card {
+      background-color: #590cbd;
+      padding: 60px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .card.active {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .content {
+      display: none;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #08995d96;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .content.active {
+      display: block;
+    }
+    // .content img {
+    //     background-size: cover;
+    //   max-width: 100%;
+    //   height: auto;
+    //   margin-bottom: 20px;
+    // }
+
+
+
+
+
+
+
+
+    
+
+
+
+/* Меню кружочков */
+    .menu-circle {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 40px;
+    }
+    .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ad96eee0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      user-select: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .circle:hover {
+      background-color: #ccc;
+      transform: scale(1.1);
+    }
+    .circle.selected {
+      background-color: #19c40a;
+    }
+    /* Область с картинками */
+    .images {
+      width: 80%;
+      height: 44rem;
+      padding: 10px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 5px;
+      margin: auto;
+    }
+    .images img {
+      width: 100%;
+      height: 85%;
+      display: none;
+      position: absolute;
+      top: 70px;
+      left: 0;
+    //   object-fit: cover;
+    border-radius: 5px;
+      border: 1px solid #df7672;
+    }
+    .images img.active {
+      display: block;
+    }
+    /* Область с вопросами */
+    .questions {
+        border-radius: 5px;
+        margin: 0 130px 30px 130px;
+      border: 1px solid #df7672;
+      padding: 10px;
+      min-height: 100px;
+      background-color: #ec75939c;
+    }
+    .question {
+      display: none;
+    }
+    .question.active {
+      display: block;
+    }

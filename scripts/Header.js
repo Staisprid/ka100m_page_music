@@ -27,3 +27,9 @@ class Header {
   }
 }
 export default Header;
+
+document.querySelectorAll('.students-table tbody tr').forEach((row) => {
+  row.addEventListener('click', function () {
+    window.location.href = this.dataset.href;
+  });
+});

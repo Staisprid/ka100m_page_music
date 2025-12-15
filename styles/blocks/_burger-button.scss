@@ -33,7 +33,6 @@
 
     &__line{
         display: none;
-
         @include tablet{
             display:block;
             width: 100%;

@@ -15,10 +15,16 @@
     <link rel="stylesheet" href="./style.css"> -->
     <link rel="stylesheet" href="./styles/main.css">
     <title>KA100M | Home</title>
+    <!-- <script type="module" src="./scripts/data.js"></script> -->
+
     <script src="./scripts/main.js" type="module" defer></script>
+
 </head>
 
 <body>
+
+
+
     <header class="header wrapper" data-js-header>
         <div class="header__body container">
             <div class="header__body-inner ">
@@ -49,9 +55,8 @@
                             </li>
                         </ul>
                 </div>
-                <button class="header__burger-button 
-                burger-button
-                visibal-mobile" type="button" aria-label="Open menu" title="Open menu" data-js-header-burger-button>
+                <button class="header__burger-button  burger-button visibal-mobile" type="button" aria-label="Open menu"
+                    title="Open menu" data-js-header-burger-button>
                     <span class="burger-button__line"></span>
                     <span class="burger-button__line"></span>
                     <span class="burger-button__line"></span>
@@ -105,11 +110,9 @@
                                 </div>
                             </dl>
                         </div>
-                        <p class="text">
+                        <p class="metrics__value">
                             Присоединяйтесь к нам и окунитесь в волшебный мир гитары, позвольте себе стать частью
-                            большой
-                            семьи
-                            любителей музыки. Начните путь к своей мечте вместе с нами!
+                            большой семьи любителей музыки. Начните путь к своей мечте вместе с нами!
                         </p>
                     </div>
                 </div>
@@ -124,14 +127,14 @@
                         <div class="table-name"><span class="top-name"> ТОП </span> гитаристов</div>
                         <div class="table-search">Поиск</div>
                     </div>
-                    <div class="table-content">
+                    <!-- <div class="table-content">
                         <div class="table-header">
                             <div class="table-header-name">ФИО</div>
                             <div class="table-header-rating">Рейтинг</div>
                             <div class="table-header-role">Роль</div>
                             <div class="table-header-progress">Достижения</div>
                         </div>
-                        <div class="table-person">
+                        <div class="table-person ">
                             <div class="table-person-name ">Серебряков Антон </div>
                             <div class="table-person-rating">1898</div>
                             <div class="table-person-role">Джедай</div>
@@ -150,9 +153,52 @@
                             <div class="table-person-progress">Гитарист</div>
                         </div>
                     </div>
+                </div> -->
+
+                    <table class="table-content" id="studentsTable">
+                        <thead>
+                            <tr class="table-header">
+                                <th class="table-header-name">ФИО</th>
+                                <th class="table-header-rating">Рейтинг</th>
+                                <th class="table-header-role">Роль</th>
+                                <th class="table-header-progress">Достижения</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-person"></tbody>
+                        <!-- <div class="table-person">
+                        <div class="table-person-name ">Серебряков Антон </div>
+                        <div class="table-person-rating">1898</div>
+                        <div class="table-person-role">Джедай</div>
+                        <div class="table-person-progress">Гитарист</div>
+                    </div>
+                    <div class="table-person">
+                        <div class="table-person-name ">Вика К. </div>
+                        <div class="table-person-rating">1000</div>
+                        <div class="table-person-role">Джедай</div>
+                        <div class="table-person-progress">Гитарист</div>
+                    </div>
+                    <div class="table-person">
+                        <div class="table-person-name ">Вика К. </div>
+                        <div class="table-person-rating">1000</div>
+                        <div class="table-person-role">Джедай</div>
+                        <div class="table-person-progress">Гитарист</div>
+                    </div> -->
+                    </table>
+
+                    <!-- <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>ФИО</th>
+                            <th>Уровень</th>
+                            <th>Рейтинг</th>
+                            <th>Достижения</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-person"></tbody>
+                </table> -->
+
                 </div>
 
-            </div>
         </section>
 
         <section>
@@ -186,11 +232,7 @@
                         </p>
                     </div>
                 </div>
-
-
             </div>
-
-
         </section>
     </main>
 
@@ -272,6 +314,7 @@
             </div>
         </div>
     </footer>
+
 
 
 
